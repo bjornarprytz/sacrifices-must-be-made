@@ -5,7 +5,7 @@ signal snip(value: int)
 
 # Controls WASD
 
-@onready var segmentSpawner = preload ("res://Segment.tscn")
+@onready var segmentSpawner = preload ("res://segment.tscn")
 @export var map: Map
 
 var segments: Array[Segment] = []

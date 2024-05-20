@@ -1,7 +1,7 @@
 class_name Map
 extends Node2D
 
-@onready var tileSpawner = preload ("res://Tile.tscn")
+@onready var tileSpawner = preload ("res://tile.tscn")
 
 # 2D grid of tiles
 var tiles: Array[Array] = []
