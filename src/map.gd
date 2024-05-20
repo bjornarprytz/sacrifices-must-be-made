@@ -7,7 +7,7 @@ extends Node2D
 var tiles: Array[Array] = []
 
 # Map size
-@export var map_size = Vector2i(24, 16)
+@export var map_size = Vector2i(41, 23)
 
 # Tile size
 @export var tile_size = 32

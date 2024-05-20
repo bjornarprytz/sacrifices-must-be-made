@@ -12,24 +12,21 @@ script = ExtResource("1_fhmmy")
 [node name="Snake" parent="." node_paths=PackedStringArray("map") instance=ExtResource("1_47d38")]
 map = NodePath("../Map")
 
-[node name="Camera" type="Camera2D" parent="."]
-position = Vector2(394, 201)
+[node name="UI" type="CanvasLayer" parent="."]
 
-[node name="UI" type="CanvasLayer" parent="Camera"]
-
-[node name="ScoreHeading" type="RichTextLabel" parent="Camera/UI"]
-offset_left = 689.0
-offset_top = 16.0
-offset_right = 739.0
-offset_bottom = 56.0
+[node name="ScoreHeading" type="RichTextLabel" parent="UI"]
+offset_left = 531.0
+offset_top = 686.0
+offset_right = 581.0
+offset_bottom = 726.0
 bbcode_enabled = true
 text = "Score:"
 
-[node name="Score" type="RichTextLabel" parent="Camera/UI"]
-offset_left = 738.0
-offset_top = 16.0
-offset_right = 788.0
-offset_bottom = 56.0
+[node name="Score" type="RichTextLabel" parent="UI"]
+offset_left = 580.0
+offset_top = 686.0
+offset_right = 678.0
+offset_bottom = 726.0
 bbcode_enabled = true
 
-[connection signal="points" from="Snake" to="." method="_on_snake_points"]
+[connection signal="snip" from="Snake" to="." method="_on_snake_snip"]
